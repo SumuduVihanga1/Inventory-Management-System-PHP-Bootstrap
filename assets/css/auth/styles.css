@@ -1,0 +1,148 @@
+*{margin:0;
+padding:0;
+box-sizing: border-box;
+font-family: 'poppins',sans-serif;
+}
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color:#102830;
+  background-size: cover ;
+  background-position: center;
+}
+
+label{
+  font-weight: bold;
+  display: inline-block;
+  margin-bottom: 5px;
+  margin-left: 5px;
+}
+
+.container {
+  width: 420px;
+  background: #024751;
+  color: white;
+  border: #000000;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); 
+  padding: 30px 40px;
+  border-radius: 15px;
+  margin: 50px auto; /* Center horizontally */
+}
+
+.container h1{
+  font-size: 36px;
+  text-align: center;
+ 
+  
+}
+
+
+
+
+.container .input-box{
+  position: relative;
+  width: 100%;
+  height: 40%;
+  margin: 20px 0;
+}
+
+.input-box input{
+  width: 100%;
+  height: 100%;
+  background: #102830;
+  border: none;
+  outline: none;
+  border: 2px solid rgb(255,255,255,0.2);
+  border-radius: 10px;
+  color: #4cffb0;
+  padding: 20px 45px 20px 20px;
+}
+
+.input-box input::placeholder{
+  color:#4cffb0;
+}
+
+.container .submit{
+  width: 100%;
+  height: 45px;
+  background:black;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  color:#ffffff;
+  font-weight: 600;
+  margin-bottom: 10px;
+  
+}
+.container .submit:hover{
+  background:#4cffb0;
+  color: #ffffff;
+}
+
+.container .btn-submit{
+  width: 100%;
+  height: 45px;
+  background:black;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  color:#ffffff;
+  font-weight: 600;
+  margin-bottom: 28px;
+  
+}
+.container .btn-submit:hover{
+  background:#4cffb0;
+  color: #ffffff;
+}
+
+
+
+.container .register{
+  font-size: 14px;
+  text-align: center;
+  margin: 20 0 15;
+}
+
+.register p a {
+  color: #4cffb0;
+  text-decoration: none;
+  font-weight: 600;
+  text-align: center;
+}
+
+.register p a:hover{
+  text-decoration: underline;
+  color: white;
+}
+
+
+.role-select{
+  
+  width: 100%;            /* or a fixed value like 200px */
+  height: 40px;           /* adjust height */
+  padding: 5px 10px;      /* inner spacing */
+  font-size: 16px;        /* text size */
+  border-radius: 8px;     /* rounded corners */
+  background-color:transparent;
+  color: white;
+  border:none;
+  margin-bottom: 20px;
+  border: 2px solid rgb(255,255,255,0.2);
+}
+
+.login-img{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2em;
+}
+
+
+

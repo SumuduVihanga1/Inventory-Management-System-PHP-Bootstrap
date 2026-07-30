@@ -1,0 +1,132 @@
+table {
+    width: 90%!important;
+    border-collapse: collapse;
+    margin: 30px 50px 50px 50px;
+    font-family:sans-serif;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+td{
+    background-color: white;
+    color: black;
+}
+
+th {
+    background-color: #024751;
+    color: rgb(255, 255, 255);
+}
+
+tr:hover {
+    background-color: #aff9c7;
+}
+
+.table-container {
+    margin-top: 10vh; /* Add space below the fixed title */
+    padding: 20px;
+}
+
+
+
+
+
+
+.container .add-category{
+    background-color: #024751; /* Green background */
+    border: solid 1px #024751;             /* Remove default border */
+    color: rgb(255, 255, 255);              /* White text color */
+    padding: 15px 32px;        /* Add padding around the text */
+    text-align: center;        /* Center text inside */
+    text-decoration: none;     /* Remove underline */
+    display: inline-block;     /* Keep button in line */
+    font-size: 16px; 
+    font-weight: 600;          /* Increase text size */
+    margin: 40px 0 0 50px;           /* Add margin between buttons */
+    cursor: pointer;          /* Make cursor a hand on hover */
+    border-radius: 12px;       /* Rounded corners */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition for hover */
+}
+
+.container .add-category:hover {
+    background-color: #ffffff;
+    color: #024751;
+    border: solid 1px #024751;
+}
+
+/*update button*/
+.container .table .cupdate-button {
+    padding: 10px 15px;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    border-radius:12px;
+    background-color: #4CAF50;
+    border: solid 1px #4CAF50;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    
+}
+
+.container .table .cupdate-button:hover {
+    background-color: #ffffff;
+    color:#4CAF50;
+    border: solid 1px #4CAF50;
+}
+
+/* Style for Delete Button */
+.container .table .cdelete-button {
+    padding: 10px 15px;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    border-radius: 12px;
+    background-color: #af1e1e;
+    border: solid 1px #af1e1e;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    
+}
+
+.container .table .cdelete-button:hover {
+    background-color: #ffffff;
+    color: #af1e1e;
+    border: solid 1px #af1e1e;
+}
+
+.product-form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+
+
+.search-section {
+    display: flex;
+    align-items: center;
+    width: 40%;
+    margin-top: 45px;
+}
+
+.search-input {
+    padding: 15px 32px;
+    border: 1px solid #ccc;
+    border-radius: 10px 0 0 10px;
+    outline: none;
+}
+
+.search-button {
+    padding: 15px 32px;
+    border: 1px solid #024751;
+    background-color: #024751;
+    color: white;
+    border-radius: 0 10px 10px 0;
+    cursor: pointer;
+}

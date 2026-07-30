@@ -1,0 +1,432 @@
+* {
+    
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+li {
+    list-style: none;
+}
+
+h2 {
+    color: #4cffb0;
+    text-align: center;
+}
+
+
+.sidebar img{
+    filter: invert(100%);
+}
+
+.container .title .user{
+    filter: none !important;
+}
+.container img{
+    filter: invert(100%);
+}
+
+
+.title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.title-start {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.title-end {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+
+
+
+
+.item {
+  flex-grow: 1;
+}
+  
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh; /* Full height of the viewport */
+    background: #102830;
+    width: 17%;
+    min-height: 100vh;
+    position: fixed; /* Fix the sidebar in place */
+    top: 0; /* Align to the top of the screen */
+    left: 0; /* Align to the left side of the screen */
+    display: flex;
+    flex-direction: column;
+    box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+.sidebar .brand {
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid black;
+    box-shadow: 0px 0px 8px 0px #4cffb0;
+}
+
+.sidebar .item {
+    align-items: center;
+}
+
+.sidebar li {
+    font-size: 20px;
+    padding: 10px 40px;
+    color: #4cffb0(26, 228, 19);
+    display: flex;
+    align-items: center;
+}
+
+.sidebar li:hover {
+    background: #4cffb0;
+    color: red;
+}
+
+.container {
+    flex-grow: 1;
+    margin-left: 17%; /* To give space to the sidebar */
+    padding: 0;
+    overflow-y: auto; /* Allow scrolling of content (table and button) */
+    height: 100vh; /* Take the full height of the screen */
+    padding-top: 20vh; /* Adjust so the content does not overlap with fixed title */
+    background-color:#ffffff;
+}
+
+.container .title {
+    background-color: #102830;
+    height: 20vh;
+    text-align: start;
+    display: flex;
+    align-items: center;
+    
+    padding-left: 50px;
+    position: fixed; /* Fix the title in place */
+    top: 0; /* Align to the top of the screen */
+    left: 17%; /* Offset from the left side, considering sidebar width */
+    width: calc(100% - 17%); /* Take the remaining space on the right of the sidebar */
+    z-index: 1; /* Ensure the title is above other content */
+}
+
+.container .title h1 {
+    color: rgb(255, 255, 255);
+    font-size: 2em;
+}
+.container .title h3{
+    color: white;
+}
+
+.table-container {
+    margin-top: 10vh; /* Add space below the fixed title */
+    padding: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+
+/*Table and activity log*/
+.total-box {
+    width: 90%;
+    margin: 30px auto;
+    margin-top: 70px;
+}
+  
+.boxs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    margin-bottom: 100px;   
+}
+  
+.box-info {
+    width: 80%; 
+    
+    padding: 15px 10px 25px 10px;
+    border-radius: 20px;
+    background-color: #024751;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-weight: 600;
+    margin: 0 auto;
+}
+
+  
+.box-info label{
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+  
+.box-info input {
+    width: 70%;
+    
+    font-size: 30px;
+    border-radius: 10px;
+    border: 2px solid #ffffff;
+    background-color: #102830;
+    color:#ffffff;
+    text-align: center;
+    font-weight: 900;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-family: sans-serif;
+    
+}
+
+
+/* box low and */
+.box-info-low {
+    width: 80%; 
+    
+    padding: 15px 10px 25px 10px;
+    border-radius: 20px;
+    background-color: #c7ca00;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-weight: 600;
+    margin: 0 auto;
+}
+.box-info-low input {
+    width: 70%; 
+    font-size: 30px;
+    border-radius: 10px;
+    border: 2px solid #ffffff;
+    background-color: #a09500;
+    color:#ffffff;
+    text-align: center;
+    font-weight: 900;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-family: sans-serif;   
+}
+.box-info-low label{
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+/* box  out stock */
+.box-info-out {
+    width: 80%; 
+    
+    padding: 15px 10px 25px 10px;
+    border-radius: 20px;
+    background-color: #bd0f0f;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-weight: 600;
+    margin: 0 auto;
+}
+.box-info-out input {
+    width: 70%; 
+    font-size: 30px;
+    border-radius: 10px;
+    border: 2px solid #ffffff;
+    background-color: #700808;
+    color:#ffffff;
+    text-align: center;
+    font-weight: 900;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-family: sans-serif;   
+}
+.box-info-out label{
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+  
+  
+  
+
+  /*activitylog css*/
+.activity-log {
+    background-color:transparent;
+    padding: 20px;
+    border-radius: 10px;
+    color:#102830;
+    
+}
+  
+.activity-log table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    
+    font-family: sans-serif;
+    color: white;
+}
+  
+.activity-log th,
+.activity-log td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+  
+.activity-log th {
+    background-color: #1a3a47;
+}
+
+.activity-log td{
+    background-color: white;
+    color: black;
+}
+
+.activity-log h3{
+    background-color: #102830;
+    color: white;
+    padding: 10px;
+}
+
+.logout {
+    padding: 10px;
+    text-align: center;
+    justify-content: flex-end;
+    background-color: #af1e1e;
+    color: white;
+    border: none;
+}
+
+.logout a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.logout:hover{
+    color:white;
+    background-color: red;
+}
+  
+
+
+
+/*dashboard card*/
+.activity-tables {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-left: 24px;
+}
+.activity-card {
+  background-color: #024751;
+  width: 370px;
+  height: 330px;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  overflow-y: auto;
+  color: #fff; 
+}
+.activity-card h3 {
+  margin-top: 0;
+  font-size: 1.1em;
+  margin-bottom: 12px;
+  border-bottom: 1px solid #ffffff;
+  padding-bottom: 8px;
+}
+.log-entry {
+    border-left: 4px solid #ffffff;
+    padding-left: 10px;
+    margin-bottom: 10px;
+    background-color: #102830;
+  }
+  
+.log-entry span.action {
+    font-weight: bold;
+    color: #4cffb0;
+    background-color: #102830;  
+}
+  
+.log-entry .time {
+    display: block;
+    font-size: 0.8em;
+    color: #f8f8f8;
+    margin-top: 2px;
+    background-color: #102830;
+}
+  
+
+/*dashboard card 2*/  
+.activity-tables2 {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-left: 0px;
+}
+.activity-card2 {
+    background-color: #024751;
+    width: 550px;
+    height: 330px;
+    border-radius: 8px;
+    padding: 16px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    overflow-y: auto;
+    color: #fff;   
+} 
+.activity-card2 h3 {
+    margin-top: 0;
+    font-size: 1.1em;
+    margin-bottom: 12px;
+    border-bottom: 1px solid #ffffff;
+    padding-bottom: 8px;
+}
+.activity-card2 span{
+    
+    padding-left: 10px;
+    margin-bottom: 10px;
+    background-color: #102830;
+    font-weight: bold;
+    color: #4cffb0;
+    background-color: #102830; 
+    
+}
+.activity-card2 .log-entry{
+    font-size: 14px;
+}
+
+
+
+
