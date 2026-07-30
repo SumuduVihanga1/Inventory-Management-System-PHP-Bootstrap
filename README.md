@@ -120,6 +120,18 @@ http://localhost/Inventory-Management-System-PHP-Bootstrap
 ```
 
 ---
+## 🔑 Default Login Credentials
+
+```
+ADMIN ROLE
+Username: admin
+Password: 12345
+```
+```
+STORE-KEEPER ROLE
+Username: sumudu
+Password: 12345
+```
 
 ## 📸 Screenshots
 
