@@ -85,7 +85,7 @@ Inventory-Management-System-PHP-Bootstrap/
 1. Clone the repository
 
 ```bash
-git clone https://github.com/yourusername/Inventory-Management-System-PHP-Bootstrap.git
+git clone https://github.com/yourusername/Inventory-Management-System.git
 ```
 
 2. Copy the project folder into the **htdocs** directory.
